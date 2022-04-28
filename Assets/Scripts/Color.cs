@@ -18,7 +18,6 @@ public class Color
         }
     }
 
-    // POLYMORPHISM
     public virtual void NewPrefab() {
         Debug.Log("Prefab created");
     }

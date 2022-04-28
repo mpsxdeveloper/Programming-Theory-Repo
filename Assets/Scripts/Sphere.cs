@@ -14,7 +14,10 @@ public class Sphere : MonoBehaviour
     void Update()
     {
         Vector3 movement = new Vector3(2f, 0f, 0f);
-        transform.Translate(movement * 1.5f * Time.deltaTime); 
+        transform.Translate(movement * 1.5f * Time.deltaTime);
+        if(transform.position.x > 6f) {
+            Destroy(transform.gameObject);
+        }
     }
 
 }
